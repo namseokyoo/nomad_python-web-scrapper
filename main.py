@@ -94,6 +94,79 @@ print(hello)
 
 #Code Chanllenge!
 
-def plus():
+def plus(a,b):
+  return float(a)+float(b)
 
-def minus
+def minus(a,b):
+  return float(a)-float(b)
+
+def times(a,b):
+  return float(a)*float(b)
+
+def division(a,b):
+  return float(a)/float(b)
+
+def negation(a):
+  return -float(a)
+
+def power(a,b):
+  return float(a)**float(b)
+
+def reminder(a,b):
+  return float(a)%float(b)
+
+
+#Conditionals part open
+
+def plus(a,b):
+  if type(b) is int or type(b) is float:
+    return a+b
+  else:
+    return None
+
+print(plus(12,12))
+
+
+#if else and ord
+
+def age_check(age):
+  print(f"you are {age}")
+  if age <18:
+    print("you cant drink")
+  elif age == 18 or age ==19:
+    print("you are new to this!")
+  elif age > 20 and age < 25:
+    print("you are still kind of young")
+  else:
+    print("engjoy your drink")
+
+age_check(19)
+
+
+# for in
+
+days=("Mon", "Tue","Wed", "Thu", "Fri")
+
+for day in days:
+  if day is "Wed":
+    break
+  else:
+    print(day)
+
+
+#Module
+
+
+import math
+
+from math import ceil
+from math import fsum as sexy_sum
+# 
+
+print(math.ceil(1.2))
+print(math.fabs(-1.2))
+print(sexy_sum([1,2,3,4,5,6,7]))
+
+from calculator import plus
+
+print(plus(1,2))
